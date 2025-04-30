@@ -12,7 +12,6 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -29,12 +28,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-<<<<<<< HEAD
+
     buildFeatures {
         viewBinding = true
     }
-=======
->>>>>>> aa12e914849c8ea4ebe22d90a4b9841cafc21e6c
+
 }
 
 dependencies {
@@ -43,14 +41,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-<<<<<<< HEAD
     implementation(libs.preference)
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
-=======
->>>>>>> aa12e914849c8ea4ebe22d90a4b9841cafc21e6c
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
