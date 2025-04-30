@@ -4,6 +4,7 @@
     <string name="lunch_time">It\'s time for lunch</string>
     <string name="its_time">It\'s time</string>
     <string name="enjoy_lunch">Enjoy your lunch</string>
+<<<<<<< HEAD
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
@@ -25,6 +26,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="account_name_description">Account name</string>
+=======
+>>>>>>> aa12e914849c8ea4ebe22d90a4b9841cafc21e6c
     Enjoy your lunch
 </resources>
 
