@@ -1,6 +1,5 @@
 package com.example.passwordmanager;
 
-<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,14 +20,6 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 import java.io.FileOutputStream;
-
-
-public class MainActivity extends AppCompatActivity {
-
-    private ArrayList<Account> accounts = new ArrayList<>();
-    private RecyclerView recyclerView;
-    private AccountAdapter adapter;
-=======
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -42,14 +33,16 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ArrayList<Account> accounts = new ArrayList<>();
+    private RecyclerView recyclerView;
+    private AccountAdapter adapter;
     Button button;
     TextView text;
->>>>>>> aa12e914849c8ea4ebe22d90a4b9841cafc21e6c
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.accountList);
@@ -134,26 +127,5 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         loadAccountsFromFile();
         adapter.notifyDataSetChanged();
-=======
-        //EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
-
-        button = findViewById(R.id.btn_time);
-        text = findViewById(R.id.txt_time);
-        String lunchMessage = getString(R.string.lunch_time);
-
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d("Setting Text", "Here we get"  );
-                text.setText(lunchMessage);
-            }
-        });
->>>>>>> aa12e914849c8ea4ebe22d90a4b9841cafc21e6c
     }
 }
